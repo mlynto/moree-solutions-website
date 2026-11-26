@@ -113,3 +113,13 @@ footer{background:#fff;border-top:1px solid #e1ddd9}
 @media(max-width:1050px){.capacity-scene{height:580px}.capacity-workload,.capacity-result{width:230px}.capacity-workload{left:45px}.capacity-result{right:45px}.capacity-engine{width:170px;height:170px}}
 @media(max-width:800px){.capacity-scene{height:555px;border-radius:26px}.capacity-top{left:22px;right:22px}.capacity-workload,.capacity-result{top:100px;width:36%}.capacity-workload{left:22px}.capacity-result{right:22px}.capacity-engine{width:132px;height:132px}.capacity-task{height:56px}.capacity-task.task-d{display:none}.capacity-focus div{min-height:54px}}
 @media(max-width:560px){.capacity-scene{height:650px}.capacity-top small{display:none}.capacity-workload,.capacity-result{width:calc(50% - 31px);top:96px}.capacity-engine{top:58%;width:118px;height:118px}.capacity-engine strong{font-size:10px}.capacity-engine small{display:none}.capacity-task{grid-template-columns:1fr;padding:0 10px}.capacity-task b{display:none}.capacity-task span{font-size:9px}.capacity-focus div{grid-template-columns:1fr;padding:0 10px}.capacity-focus span{display:none}.capacity-focus b{font-size:11px}.capacity-complete{padding-left:38px}.capacity-complete i{left:12px}}
+
+/* Crop unused space below the workload transformation. */
+.capacity-scene{height:475px}
+.capacity-workload,.capacity-result{top:92px}
+.capacity-task{height:54px;margin-bottom:8px}
+.capacity-engine{top:53%;width:158px;height:158px}
+.capacity-focus{gap:8px}.capacity-focus div{min-height:52px}.capacity-complete{margin-top:12px;padding-top:14px;padding-bottom:14px}.capacity-complete i{top:17px}
+@media(max-width:1050px){.capacity-scene{height:500px}.capacity-workload,.capacity-result{top:96px}}
+@media(max-width:800px){.capacity-scene{height:500px}.capacity-workload,.capacity-result{top:92px}.capacity-task{height:50px}.capacity-focus div{min-height:50px}}
+@media(max-width:560px){.capacity-scene{height:570px}.capacity-workload,.capacity-result{top:90px}.capacity-engine{top:58%}}
