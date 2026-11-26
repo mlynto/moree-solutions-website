@@ -73,3 +73,20 @@ footer{background:#fff;border-top:1px solid #e1ddd9}
 .about-mark{display:none}
 .contact{background:#fff;border-top:7px solid var(--red)}
 .contact-pattern{opacity:.42;background-image:linear-gradient(rgba(33,43,52,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(33,43,52,.035) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(90deg,transparent 15%,black 75%,transparent)}
+
+/* Direct, high-contrast consultation call to action. */
+.contact{grid-template-columns:minmax(0,1.15fr) minmax(420px,.65fr);min-height:610px;gap:8vw;background:var(--blue);border-top:0;color:#fff}
+.contact-pattern{opacity:.55;background-image:linear-gradient(rgba(158,219,211,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(158,219,211,.07) 1px,transparent 1px),radial-gradient(circle at 82% 50%,rgba(224,68,53,.2),transparent 28%);background-size:48px 48px,48px 48px,auto;mask-image:linear-gradient(90deg,transparent 5%,black 58%,black)}
+.contact .eyebrow{color:var(--mint)}
+.contact h2{max-width:900px;font-size:clamp(54px,6.1vw,92px);line-height:.96}
+.contact h2 span{color:var(--red2)}
+.contact-copy>p:last-child{max-width:720px;color:#cbd4d9;font-size:20px}
+.contact-action{padding:32px 0 32px 5vw;border-left:1px solid #52606a}
+.contact-prompt{color:var(--mint)!important;font-size:12px!important;letter-spacing:.13em!important;margin-bottom:22px!important}
+.contact-button{margin:0;min-height:112px;padding:27px 30px;background:var(--red);border-radius:20px;color:#fff;box-shadow:0 22px 50px rgba(0,0,0,.24)}
+.contact-button small{color:#ffd8d3;font-size:11px}.contact-button strong{font-size:24px}.contact-button span{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.14);transition:transform .25s ease,background .25s ease}
+.contact-button:hover{background:var(--red2);color:#fff;transform:translateY(-6px)}
+.contact-button:hover span{background:#fff;color:var(--red);transform:translate(3px,-3px)}
+.contact-action>p:last-child{margin-top:20px;text-align:left;color:#aeb9bf;font-size:13px}
+@media(max-width:900px){.contact{grid-template-columns:1fr;gap:55px}.contact-action{padding:36px 0 0;border-left:0;border-top:1px solid #52606a}}
+@media(max-width:600px){.contact{min-height:auto}.contact h2{font-size:48px}.contact-button strong{font-size:20px}}
